@@ -5,7 +5,6 @@
 class Grandchild : public Child{
 private:
     std::string home_city;
-    Parent* grandparent;
 public:
     Grandchild();
     ~Grandchild() = default;
