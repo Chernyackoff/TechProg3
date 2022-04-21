@@ -4,6 +4,10 @@
 
 
 void save(Vector<Parent*> v){
+    if (v.size() == 0){
+        std::cout<< "Nothing to save!" << std::endl;
+        return;
+    }
     std::ofstream file("../data.txt");
     file << v.size() << '\n';
     for (int i = 0; i < v.size(); i++){
