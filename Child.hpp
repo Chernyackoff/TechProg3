@@ -7,8 +7,9 @@ protected:
     Parent* parent;
 public:
     Child();
+    Child(std::string name, int day, int month, int year, Parent* p);
     ~Child();
-    void print() override;
+    void print(std::ostream &out) override;
 };
 
 #endif //LAB3_CHILD_HPP

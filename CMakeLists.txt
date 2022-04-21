@@ -3,4 +3,4 @@ project(Lab3)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Lab3 main.cpp Parent.cpp Parent.hpp correct_input.cpp Child.cpp Child.hpp Grandchild.cpp Grandchild.hpp)
+add_executable(Lab3 main.cpp Parent.hpp Parent.cpp Child.hpp Child.cpp Grandchild.hpp Grandchild.cpp Vector.cpp correct_input.cpp)

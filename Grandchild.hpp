@@ -7,8 +7,9 @@ private:
     std::string home_city;
 public:
     Grandchild();
+    Grandchild(std::string name, std::string city, int day, int month, int year, Parent* p);
     ~Grandchild() = default;
-    void print() override;
+    void print(std::ostream &out) final;
 
 };
 

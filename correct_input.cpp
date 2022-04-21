@@ -4,7 +4,7 @@
 template <typename T>
 T correct_input(){
     T temp;
-    std::getline(std::cin, temp);
+    std::cin >> temp;
     while (std::cin.fail()) {
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // fool proofing

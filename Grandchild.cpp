@@ -1,4 +1,5 @@
 #include "Grandchild.hpp"
+#include <utility>
 
 Grandchild::Grandchild() {
     std::cout << "Enter home city: " << std::endl;
@@ -6,10 +7,14 @@ Grandchild::Grandchild() {
 }
 
 
-void Grandchild::print() {
-    std::cout << "Name: " << full_name << std::endl;
-    std::cout << "Birthday" << birth_date << std::endl;
-    std::cout << "Home city: " << home_city << std::endl;
-    std::cout << "Parent data: "<< std::endl;
-    parent->print();
+void Grandchild::print(std::ostream &out) {
+    Parent::print(out);
+    out << "Home city:\t" << home_city << '\n';
+    out << "Parent:\n";
+    parent->print(out);
+}
+
+Grandchild::Grandchild(std::string name, std::string city, int day, int month, int year, Parent *p)
+        : Child(std::move(name), day, month, year, p) {
+    home_city = std::move(city);
 }
