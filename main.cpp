@@ -26,13 +26,13 @@ void addParent(Vector<Parent*>& v){
     std::cout << "Please enter month of birth:\n";
     month = correct_input<int>();
     while (month < 1 || month > 12){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right month" << std::endl;
         month = correct_input<int>();
     }
     std::cout << "Please enter year of birth:\n";
     year = correct_input<int>();
     while (year > 2022){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right year" << std::endl;
         year = correct_input<int>();
     }
     std::cout << "Please enter full name:\n";
@@ -55,13 +55,13 @@ void addChild(Vector<Parent*>& v){
     std::cout << "Please enter month of birth:\n";
     month = correct_input<int>();
     while (month < 1 || month > 12){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right month" << std::endl;
         month = correct_input<int>();
     }
     std::cout << "Please enter year of birth:\n";
     year = correct_input<int>();
     while (year > 2022){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right year" << std::endl;
         year = correct_input<int>();
     }
     std::cout << "Please enter full name:\n";
@@ -79,13 +79,13 @@ void addChild(Vector<Parent*>& v){
     std::cout << "Please enter month of birth:\n";
     month = correct_input<int>();
     while (month < 1 || month > 12){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right month" << std::endl;
         month = correct_input<int>();
     }
     std::cout << "Please enter year of birth:\n";
     year = correct_input<int>();
     while (year > 2022){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right year" << std::endl;
         year = correct_input<int>();
     }
     std::cout << "Please enter full name:\n";
@@ -106,13 +106,13 @@ void addGrandchild(Vector<Parent*>& v){
     std::cout << "Please enter month of birth:\n";
     month = correct_input<int>();
     while (month < 1 || month > 12){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right month" << std::endl;
         month = correct_input<int>();
     }
     std::cout << "Please enter year of birth:\n";
     year = correct_input<int>();
     while (year > 2022){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right year" << std::endl;
         year = correct_input<int>();
     }
     std::cout << "Please enter full name:\n";
@@ -130,13 +130,13 @@ void addGrandchild(Vector<Parent*>& v){
     std::cout << "Please enter month of birth:\n";
     month = correct_input<int>();
     while (month < 1 || month > 12){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right month" << std::endl;
         month = correct_input<int>();
     }
     std::cout << "Please enter year of birth:\n";
     year = correct_input<int>();
     while (year > 2022){
-        std::cout << "Violation! Entre the right day" << std::endl;
+        std::cout << "Violation! Entre the right year" << std::endl;
         year = correct_input<int>();
     }
     std::cout << "Please enter full name:\n";
