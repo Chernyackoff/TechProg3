@@ -143,8 +143,8 @@ void addGrandchild(Vector<Parent*>& v){
     std::ws(std::cin);
     std::getline(std::cin, name);
     std::string city;
-    std::ws(std::cin);
     std::cout << "Please, enter home city:\n";
+    std::ws(std::cin);
     std::getline(std::cin, city);
     auto temp = new Grandchild(name, city, day, month, year, p);
     v.append(temp);
@@ -154,7 +154,7 @@ void printCustom(Vector<Parent*>& v){
         std::cout<< "Nothing to print!" << std::endl;
         return;
     }
-    std::cout << "Enter index (from 0 to " << v.size() <<"):\n";
+    std::cout << "Enter index (from 0 to " << v.size() - 1 <<"):\n";
     int i = correct_input<int>();
     while (i < -v.size() || i > v.size()){
         std::cout << "Enter correct value! Index:\n";
@@ -197,7 +197,7 @@ int main() {
             case 3:
                 addGrandchild(obj);
             case 4:
-                obj[obj.size()-1]->print(std::cout);
+                obj[-1]->print(std::cout);
                 break;
             case 5:
                 printCustom(obj);
